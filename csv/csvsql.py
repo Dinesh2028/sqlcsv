@@ -29,7 +29,7 @@ def save_to_csv():
         writer = csv.writer(file)
         writer.writerow(["ID", "Name", "Score", "Date"])
         writer.writerows(results)
-    print("✅ Results saved to results.csv!")
+    print(" Results saved to results.csv!")
 
 def view_results():
     cursor.execute("SELECT * FROM results")
